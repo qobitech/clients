@@ -1,0 +1,33 @@
+Database Client
+
+database name: u557576885_av
+username:  u557576885_uju
+password: YT^lqt1sm:F+
+
+FTP Client
+
+host:     srv223.main-hosting.eu
+username: u557576885
+password: p$KLZfFh2K]M
+
+
+Email Client
+
+address:   https://webmail.hostinger.com
+email:     info@avoirevolticnig.com
+password:  tbzXmsacKV3O
+
+
+Wordpress-login
+
+username: root
+password: F$9w3E3dT$2EkyZ$P&)EMksF
+
+
+
+jetpack account:
+username: avoirevoltic
+password: avoirevoltic@gmail!@#
+
+
+avLinkAv@#$%!&31
