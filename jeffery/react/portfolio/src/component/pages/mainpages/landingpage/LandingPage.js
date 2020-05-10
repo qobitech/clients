@@ -2,12 +2,6 @@ import React from 'react';
 import LandingPageCss from './LandingPage.module.css';
 import {One as HeaderFont,Para as BodyFont} from '../../../reusable/fonts';
 import profile_image from '../../../assets/image/introduction/avatar@2x.png';
-import social_image1 from '../../../assets/image/introduction/Icons.svg';
-import social_image2 from '../../../assets/image/introduction/Icons-1.svg';
-import social_image3 from '../../../assets/image/introduction/Icons-2.svg';
-import social_image3b from '../../../assets/image/introduction/Iconsb.svg';
-import social_image4 from '../../../assets/image/introduction/Icons-3.svg';
-
 
 const LandingPage = () => {
 
@@ -95,7 +89,7 @@ const LandingPage = () => {
             </section>
             
             {/* social media icons */}
-            <section className={LandingPageCss.social}>
+            {/* <section className={LandingPageCss.social}>
                 
                 <div className={LandingPageCss.container}>
                     <div className={LandingPageCss.img_container}><img src={social_image2} alt="" className={LandingPageCss.social_icons}></img></div>
@@ -108,7 +102,7 @@ const LandingPage = () => {
                     </div>
                 </div>
 
-            </section>
+            </section> */}
 
         </div>
 
