@@ -3,6 +3,17 @@
     padding:0;
 }
 
+.font_one,
+.font_two,
+.font_three,
+.font_four,
+.font_five,
+.font_six,
+.font_p,
+.font_alpha{
+    font-family: 'encode_sans';
+}
+
 .font_one{
     font-size: 2em;
     font-weight: bold;
@@ -42,8 +53,8 @@
 }
 
 .font_six{
-    font-size: .85em;
-    /* font-weight: bold; */
+    font-size: .83em;
+    font-weight: 500;
     text-size-adjust: inherit;
     font-size-adjust: inherit;
     margin: 0;

@@ -1,15 +1,18 @@
+@font-face {
+  font-family: 'encode_sans';
+  src: url('./component/assets/font/encode_sans/EncodeSans-Regular.ttf');
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'encode_sans';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'encode_sans', monospace;
 }
 
 :root{
@@ -19,4 +22,7 @@ code {
   --main-color4 : #00000029;
   --main-color5 : #F5F5F5;
   --main-color6 : #005B8B;
+  --main-color7 : #008B76;
+  --main-color8 : #575757;
+  --main-color9 : #EAEAEA;
 }

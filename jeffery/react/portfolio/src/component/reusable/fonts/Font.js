@@ -30,7 +30,7 @@ const Para =({fontStyle,fontClass,...props})=>{
 }
 
 const Alpha =({fontStyle,ahref,fontClass,...props})=>{
-    return(<a href={`${process.env.PUBLIC_URL}/${ahref}`} className={`${FontCss.font_alpha} ${fontClass}`} style={fontStyle}>{props.children}</a>)
+    return(<a href={`http://localhost:3000${ahref}`} className={`${FontCss.font_alpha} ${fontClass}`} style={fontStyle}>{props.children}</a>)
 }
 
 export {

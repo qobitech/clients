@@ -1,0 +1,42 @@
+
+.background{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.background .container{
+    width: 90%;
+    margin: 0 auto;
+    background: var(--main-color2);
+    padding: 20px 0;
+}
+
+.background .container .professional_summary,
+.background .container .area_of_expertise,
+.background .container .work_experience,
+.background .container .education,
+.background .container .certification{
+    padding: 20px 30px;
+    margin: 20px 0;
+}
+
+.background .container .header{
+    border-bottom: 1px solid var(--main-color9);
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.background .container .body{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.header_font{
+    color: var(--main-color8);
+    font-weight: bold;
+}
+
+.body_font{
+    line-height: 27px;
+}

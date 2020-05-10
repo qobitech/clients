@@ -16,21 +16,25 @@ function App() {
 
           <Menu />
 
-          <Switch>
+            <div className="main_container">
 
-            <Route exact path={pageurl.LANDING_PAGE_URL} component={LandingPage} />
+                <Switch>
 
-            <Route exact path={pageurl.BACKGROUND_PAGE_URL} component={Background} />
-            
-            <Route exact path={pageurl.ARTICLE_PAGE_URL} component={Articles} />
-            
-            <Route exact path={pageurl.WORK_PAGE_URL} component={Work} />
-            
-            <Route exact path={pageurl.CONTACT_ME_URL} component={Contact} />
+                    <Route exact path={pageurl.LANDING_PAGE_URL} component={LandingPage} />
 
-          </Switch>
+                    <Route exact path={pageurl.BACKGROUND_PAGE_URL} component={Background} />
+                    
+                    <Route exact path={pageurl.ARTICLE_PAGE_URL} component={Articles} />
+                    
+                    <Route exact path={pageurl.WORK_PAGE_URL} component={Work} />
+                    
+                    <Route exact path={pageurl.CONTACT_ME_URL} component={Contact} />
 
-        <Footer />
+                </Switch>
+
+            </div>
+
+        {/* <Footer /> */}
 
       </div>
 
