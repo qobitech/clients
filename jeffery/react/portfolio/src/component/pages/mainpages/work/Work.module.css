@@ -68,6 +68,10 @@
     /* border: 1px solid black; */
     text-align: center;
     width: 100%;
+    height: 100px;
+}
+
+.work .container .my_projects .body_item .body .img_container{
     height: 200px;
 }
 
@@ -142,15 +146,20 @@
     padding-bottom: 100px;
 }
 
+.others_no_mobile{
+    display: none;
+}
+
 .work .container .others{
-    border-top: 0.2px solid var(--main-color9);
-    border-bottom: 0.2px solid var(--main-color9);
+    /* border-top: 0.2px solid var(--main-color9); */
+    /* border-bottom: 0.2px solid var(--main-color9); */
     margin-top: 10px;
     height: 220px;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-    overflow-y: scroll;
+    overflow-y: hidden;
+    transition: .4s ease-in-out;
 }
 
 .work .container .header_title{
@@ -191,11 +200,197 @@
     padding: 10px 15px;
 }
 
-.story{
+.work .container .story{
     line-height: 27px;
     margin-bottom: 15px;
 }
 
-.work .container .story{
+.work .container .read_command{
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work .container .read_command .image_container{
+    border: 1px solid var(--main-color9);
+    width : 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* margin: 0 auto; */
+}
+
+.work .container .read_command .para{
+    font-size: .70em;
+    margin-left: 5px;
+    color: var(--main-color8);
+}
+
+.work .container .read_command img{
+    width: 15px;
+}
+
+
+@media only screen and (min-width:768px){
+
+    .work .topheader{
+        display: block;
+        /* border: 1px solid white; */
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .work .topheader .headfont{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: var(--main-color2);
+        font-size: 2.5em;
+    }
+
+    .work .container{
+        width: 85%;
+    }   
+
+    .work .underlap_container{
+        top: 150px;
+    }
+
+    .work .container .my_services,
+    .work .container .my_projects
+    {
+        padding: 20px 70px;
+        /* margin: 20px 0; */
+    }
+
+    .work .container .my_services .body_item{
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;       
+        margin-top: 100px;
+    }
+
+    .work .container .my_projects .nav_sect{
+        border: none;
+    }
+
+    .work .container .my_projects .tab_section{
+        overflow-x: visible;
+        /* border: 1px solid black; */
+        width: 100%;
+    }
+
+    .work .container .my_projects .tab_section .tab_item .tab_font{
+        font-size: .80em;
+    }
+
+    .work .container .my_projects .nav_sect .nav_arrow{
+        display: none;
+    }
+
+    .work .container .read_command{
+        display: none;
+    }
+
+    .work .container .body_item .body .img_container{
+        /* border: 1px solid black; */
+        /* text-align: center;
+        width: 100%;
+        height: 100px; */
+        width: 30%;
+    }
+
+
+    .second_section{
+        /* border: 1px solid black; */
+        width: 65%;
+    }
+
+    .others_no_mobile{
+        display: block;
+    }
+
+    .others_mobile{
+        display: none;
+    }
+
+    .work .container .others{
+        width: 100%;
+        height: auto;
+    }
+
+    .work .container .my_projects .body_item{
+        overflow-y: visible;
+        height: auto;
+    }
+
+    .work .container .my_projects .body_item .body{
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .work .container .header_title{
+        /* border: 1px solid black; */
+        /* padding: 5px 0 25px; */
+        /* padding: 0; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    .work .container .header_title .header_font{
+        margin: 0;
+    }
+
+    .work .container .header_description{
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        /* padding: 20px 0; */
+    }
+        
+    .work .container .header_company{
+        margin: 0;
+        margin-right: 20px;
+        font-size: .80em;
+    }
+
+    .work .container .header_year{
+        
+    }
+
+    .work .container .my_projects .body_header{
+        border-bottom: 1px solid var(--main-color9);
+    }
+
+    .work .container .my_services .body_header{
+        border: none;
+    }
+
+    .work .container .body_body{
+        /* border: 1px solid black; */
+        padding: 20px 45px 0 0px;
+        text-align: left;
+        /* display: ; */
+    }
+
+    .work .container .body_body_more{
+        /* border: 1px solid black; */
+        display: none;
+    }
+
+    .project_link_style{
+        /* border: 1px solid black; */
+        display: block;
+        text-align: left;
+    }
+
 
 }
