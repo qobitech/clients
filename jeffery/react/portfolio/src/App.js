@@ -4,15 +4,19 @@ import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import {Articles,Background,Contact,LandingPage,Work} from './component/pages/mainpages';
 import {Header,Footer,Menu} from './component/pages/navigation'
 import pageurl from './component/framework/pageurl';
+import {createBrowserHistory} from 'history'
 
-function App() {
+function App(props) {
+
+  let history = createBrowserHistory();
+
   return (
 
    <Router basename={process.env.PUBLIC_URL}>
       
       <div className="app">
       
-        <Header />
+        <Header url={history.location.pathname} />
 
           <Menu />
 

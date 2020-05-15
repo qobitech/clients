@@ -1,16 +1,43 @@
 import React from 'react';
 import WorkCss from './Work.module.css';
-import {Alpha,One as HeaderFont,Three as Fur,Five,Para} from '../../../reusable/fonts'
-import konnectore from '../../../assets/image/work/Konnectore - Presentation@2x.png';
+import {One as HeaderFont,Five,Para} from '../../../reusable/fonts'
+// import ReactDOM from 'react-dom';
+
+import konnectore from '../../../assets/image/edited/Konnectore Presentation.png';
 import paymonthly from '../../../assets/image/work/Paymonthly - Presentation@2x.png';
 import xela from '../../../assets/image/work/Xela - Presentation@2x.png';
-import fpgwebsite from '../../../assets/image/work/FPG Website - Presentation@2x.png';
-import udux from '../../../assets/image/work/uduX Presentation - Mobile@2x.png';
-import readmore from '../../../assets/image/icons/icon.svg';
-import readless from '../../../assets/image/icons/show-less-fold-button.svg';
+import fpgwebsite from '../../../assets/image/edited/FPG Website - Presentation.png';
+import udux from '../../../assets/image/edited/udux presentation.png';
+import ProjectComponent from './ProjectComponent';
+import TestimonialSlider from './TestimonialSlider';
 
 
 const Work = () => {
+
+    const [projectCategories, setProjectCategories] = React.useState({
+        all : true,
+        uiux : false,
+        branding : false,
+        webdesign : false,
+        businessanalysis : false
+    });
+
+    function handleProjectSelection(category){
+
+        if(category === "all"){
+            setProjectCategories({all : true});
+        }else if(category === "uiux"){
+            setProjectCategories({uiux : true});
+        }else if(category === "branding"){
+            setProjectCategories({branding : true});
+        }else if(category === "webdesign"){
+            setProjectCategories({webdesign : true});
+        }else if(category === "businessanalysis"){
+            setProjectCategories({businessanalysis : true});
+        }
+
+    }
+
 
     return(
 
@@ -154,24 +181,29 @@ const Work = () => {
 
                         <div className={WorkCss.tab_section}>
                             
-                            <div className={WorkCss.tab_item}>
+                            <div className={WorkCss.tab_item} onClick={()=>handleProjectSelection("all")}>
                                 <Para fontClass={WorkCss.tab_font}>All</Para>
+                                <span className={projectCategories.all && WorkCss.line}></span>
                             </div>
 
-                            <div className={WorkCss.tab_item}>
+                            <div className={WorkCss.tab_item} onClick={()=>handleProjectSelection("uiux")}>
                                 <Para fontClass={WorkCss.tab_font}>UI/UX Design</Para>
+                                <span className={projectCategories.uiux && WorkCss.line}></span>
                             </div>
 
-                            <div className={WorkCss.tab_item}>
+                            <div className={WorkCss.tab_item} onClick={()=>handleProjectSelection("branding")}>
                                 <Para fontClass={WorkCss.tab_font}>Branding</Para>
+                                <span className={projectCategories.branding && WorkCss.line}></span>
                             </div>
 
-                            <div className={WorkCss.tab_item}>
+                            <div className={WorkCss.tab_item} onClick={()=>handleProjectSelection("webdesign")}>
                                 <Para fontClass={WorkCss.tab_font}>Web Design</Para>
+                                <span className={projectCategories.webdesign && WorkCss.line}></span>
                             </div>
 
-                            <div className={WorkCss.tab_item}>
+                            <div className={WorkCss.tab_item} onClick={()=>handleProjectSelection("businessanalysis")}>
                                 <Para fontClass={WorkCss.tab_font}>Business Analysis</Para>
+                                <span className={projectCategories.businessanalysis && WorkCss.line}></span>
                             </div>
 
                         </div>
@@ -184,8 +216,19 @@ const Work = () => {
 
                     <div className={WorkCss.body_item}>
 
+                            {/* NO RESULTS */}
+                            <span style={{width:"100%",display:"flex",padding:"20px 0",
+                                        height: "100%",alignItems:"center",justifyContent:"center",
+                                        position:"absolute",zIndex:"-1"}}>
+                                <h3 style={{color:"#e4e4e4"}}>NO RESULTS</h3>
+                            </span>
+
                             {/* body */}
-                            <ProjectComponent img={konnectore} 
+                            <ProjectComponent 
+                                            WorkCss={WorkCss}
+                                            img={konnectore}
+                                            image_description="konnectore web and mobile application"
+                                            showComponent={projectCategories.all ? true : projectCategories.uiux ? true : false} 
                                             project={"Konnectore Web & Mobile"} 
                                             project_type={"UI/UX Design"} 
                                             company={"FlexiPGroup"} 
@@ -209,7 +252,11 @@ const Work = () => {
                             </ProjectComponent>
 
                             {/* body */}
-                            <ProjectComponent img={paymonthly} 
+                            <ProjectComponent 
+                                            WorkCss={WorkCss}
+                                            img={paymonthly} 
+                                            image_description="pay monthly web application"
+                                            showComponent={projectCategories.all ? true : projectCategories.uiux ? true : false} 
                                             project={"Pay Monthly Web App"} 
                                             project_type={"UI/UX Design"} 
                                             company={"Freelance"} 
@@ -233,7 +280,11 @@ const Work = () => {
                             </ProjectComponent>
 
                             {/* body */}
-                            <ProjectComponent img={xela} 
+                            <ProjectComponent 
+                                            WorkCss={WorkCss}
+                                            img={xela} 
+                                            image_description="xela web and mobile application"
+                                            showComponent={projectCategories.all ? true : projectCategories.uiux ? true : false} 
                                             project={"Xela - The idea bank Web App"} 
                                             project_type={"UI/UX Design"} 
                                             company={"Freelance"} 
@@ -258,7 +309,11 @@ const Work = () => {
                             </ProjectComponent>
 
                             {/* body */}
-                            <ProjectComponent img={fpgwebsite} 
+                            <ProjectComponent 
+                                            WorkCss={WorkCss}
+                                            img={fpgwebsite} 
+                                            image_description="fpg web application"
+                                            showComponent={projectCategories.all ? true : projectCategories.uiux ? true : false} 
                                             project={"FPG Website"} 
                                             project_type={"UI/UX Design"} 
                                             company={"FlexiPGroup"} 
@@ -275,7 +330,11 @@ const Work = () => {
                             </ProjectComponent>
 
                             {/* body */}
-                            <ProjectComponent img={udux} 
+                            <ProjectComponent 
+                                            WorkCss={WorkCss}
+                                            img={udux} 
+                                            image_description="udux web and mobile application"
+                                            showComponent={projectCategories.all ? true : projectCategories.uiux ? true : false} 
                                             project={"uduX Mobile Application"} 
                                             project_type={"UI/UX Design"} 
                                             company={"Groove Platforms"} 
@@ -303,7 +362,7 @@ const Work = () => {
 
 
                 {/* PROFESSIONAL SUMMARY */}
-                <section className={WorkCss.my_services}>
+                <section className={WorkCss.testimonials}>
 
                     {/* header */}
                     <div className={WorkCss.header}>
@@ -312,17 +371,18 @@ const Work = () => {
 
                     </div>
 
-                    <div className={WorkCss.body_item}>
+                    <div className={WorkCss.boundary}>
 
-                        {/* body */}
-                        <div className={WorkCss.body}>
-                        
+                        <div className={WorkCss.body_item}>
+
+                            {/* body */}
+                            <TestimonialSlider WorkCss={WorkCss}/>
+
                         </div>
 
                     </div>
 
                 </section>
-
 
             </div>
 
@@ -331,126 +391,6 @@ const Work = () => {
     )
 }
 
-const ProjectComponent = ({img,project,project_type,company,year,project_link,...props}) => {
-    
-    const [userRead,setUserRead] = React.useState(false);
-
-                return(
-
-                        <div className={WorkCss.body}>
-                                
-                                {/* Image container */}
-                                <div className={WorkCss.img_container}>
-
-                                    <img src={img} alt="konnectore web and mobile" />
-
-                                </div>
-
-                                <div className={WorkCss.second_section}>
-
-                                    <div className={WorkCss.others_mobile}>
-                                
-                                        <div className={WorkCss.others} style={{height:userRead ? "auto" : "220px" }}>
-
-                                            <div className={WorkCss.body_header}>
-                                            
-                                                <div className={WorkCss.header_title}>
-                                                
-                                                    <Five fontClass={WorkCss.header_font}>{project}</Five>
-                                                
-                                                    <Para fontClass={WorkCss.header_project}>{project_type}</Para>
-                                                
-                                                </div>
-
-                                                <div className={WorkCss.header_description}>
-                                                
-                                                    <Para fontClass={WorkCss.header_company}>{company}</Para>
-                                                
-                                                    <Para fontClass={WorkCss.header_year}>{year}</Para>
-                                                
-                                                </div>
-                                            
-                                            </div>
-
-                                            <div className={WorkCss.body_body}>
-                                                
-                                                {props.children}                   
-
-                                            </div>
-
-                                        </div>
-                                    
-                                    </div>
-
-                                    <div className={WorkCss.others_no_mobile}>
-                                
-                                        <div className={WorkCss.others} >
-
-                                            <div className={WorkCss.body_header}>
-                                            
-                                                <div className={WorkCss.header_title}>
-                                                
-                                                    <Five fontClass={WorkCss.header_font}>{project}</Five>
-                                                
-                                                    <Para fontClass={WorkCss.header_project}>{project_type}</Para>
-                                                
-                                                </div>
-
-                                                <div className={WorkCss.header_description}>
-                                                
-                                                    <Para fontClass={WorkCss.header_company}>{company}</Para>
-                                                
-                                                    <Para fontClass={WorkCss.header_year}>{year}</Para>
-                                                
-                                                </div>
-                                            
-                                            </div>
-
-                                            <div className={WorkCss.body_body}>
-                                                
-                                                {props.children}                   
-
-                                            </div>
-
-                                        </div>
-                                    
-                                    </div>
-
-                                    
-
-                                    <div className={WorkCss.body_body_more}>
-
-                                        <div className={WorkCss.read_command} style={{display: userRead ? "none" : "flex"}}>
-
-                                            <div className={WorkCss.image_container} onClick={()=>{setUserRead(true)}}>
-                                            
-                                                <img src ={readmore} alt="read more"></img>    
-                                            
-                                            </div>
-
-                                            <Para fontClass={WorkCss.para}>Read More</Para>
-                                        </div>
-                                        
-                                        <div className={WorkCss.read_command} style={{display: userRead ? "flex" : "none"}}>
-                                            
-                                            <div className={WorkCss.image_container} onClick={()=>{setUserRead(false)}}>
-
-                                                <img src ={readless} alt="read less"></img>    
-
-                                            </div>
-                                            <Para fontClass={WorkCss.para}>Read Less</Para>
-                                        </div>                                
-                                    
-                                    </div>
-                                    
-                                    <Alpha ahref={project_link} fontClass={WorkCss.project_link_style}>
-                                            <button className={WorkCss.hire_btn}>View Project</button>
-                                    </Alpha>
-
-                                </div>
-                        </div>
-                )
-};
 
 
 export default Work;

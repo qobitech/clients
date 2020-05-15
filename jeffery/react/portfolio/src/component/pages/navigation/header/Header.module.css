@@ -97,6 +97,11 @@
         border-bottom: 1px solid white;
     }
     
+    .alpha_underline{
+        border-bottom: 1px solid white;
+        cursor: default;
+    }
+
     .nav ul .alpha li{
         list-style-type: none;
     }
