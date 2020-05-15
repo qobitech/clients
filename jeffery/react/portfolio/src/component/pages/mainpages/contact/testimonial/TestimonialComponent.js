@@ -1,8 +1,8 @@
 import React from 'react';
-import {Five,Para} from '../../../reusable/fonts'
+import {Five,Para} from '../../../../reusable/fonts'
 
 
-const TestimonialComponent = ({WorkCss,customer_name,customer_company,...props}) => {
+const TestimonialComponent = ({WorkCss,OtherCssLeft,OtherCssRight,customer_name,customer_company,...props}) => {
     
     return (
         
@@ -11,13 +11,13 @@ const TestimonialComponent = ({WorkCss,customer_name,customer_company,...props})
             {/* SLIDER */}
             <div className={WorkCss.slider}>
 
-                <div className={WorkCss.left}>
+                <div className={`${WorkCss.left} ${OtherCssLeft}`}>
 
                     <img src="" alt="" ></img>
 
                 </div>
 
-                <div className={WorkCss.right}>
+                <div className={`${WorkCss.right} ${OtherCssRight}`}>
 
                     <div className={WorkCss.header_title}>
                                                     

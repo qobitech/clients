@@ -33,7 +33,13 @@ const Footer = () => {
                         
                         <div className={FooterCss.text_copy}>
         
-                            <BodyFont fontClass={FooterCss.credit}>Jeffery Abdulateef &copy; 2020</BodyFont>                        
+                            <BodyFont fontClass={FooterCss.credit}>Jeffery Abdulateef &copy; 2020 </BodyFont>                        
+                            
+                            <a target="_blank" href="https://www.linkedin.com/in/frank-edekobi-500062129" rel="noopener noreferrer">
+
+                                <BodyFont fontClass={FooterCss.credit}>Coded by Frank</BodyFont>
+
+                            </a>                        
         
                         </div>
         
@@ -47,7 +53,7 @@ const Footer = () => {
                 
                     <a target="_blank" href="https://www.linkedin.com/in/frank-edekobi-500062129" rel="noopener noreferrer">
 
-                        <BodyFont fontClass={FooterCss.credit}>Developed by Qobi</BodyFont>
+                        <BodyFont fontClass={FooterCss.credit}>Coded by Frank</BodyFont>
 
                     </a>                        
 

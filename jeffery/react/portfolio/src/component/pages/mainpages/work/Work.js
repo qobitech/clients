@@ -9,7 +9,7 @@ import xela from '../../../assets/image/work/Xela - Presentation@2x.png';
 import fpgwebsite from '../../../assets/image/edited/FPG Website - Presentation.png';
 import udux from '../../../assets/image/edited/udux presentation.png';
 import ProjectComponent from './ProjectComponent';
-import TestimonialSlider from './TestimonialSlider';
+import TestimonialSlider from './testimonial/TestimonialSlider';
 
 
 const Work = () => {
