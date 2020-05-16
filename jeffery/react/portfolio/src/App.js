@@ -2,13 +2,16 @@ import React from 'react';
 import './App.css';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import {Articles,Background,Contact,LandingPage,Work} from './component/pages/mainpages';
-import {Header,Footer,Menu} from './component/pages/navigation'
+import {Header,Footer,Menu,SideMenu} from './component/pages/navigation'
 import pageurl from './component/framework/pageurl';
-import {createBrowserHistory} from 'history'
+import {createBrowserHistory} from 'history';
+import SwipeEffect from './component/reusable/effect'
 
-function App(props) {
+function App() {
 
   let history = createBrowserHistory();
+
+  const sidemenu = React.useRef();
 
   return (
 
@@ -16,8 +19,10 @@ function App(props) {
       
 
       <div className="app">
+
+        <SideMenu url={history.location.pathname} reff={sidemenu} closemenu={()=>SwipeEffect.raiseMenu(sidemenu)}/>
       
-        <Header url={history.location.pathname} />
+        <Header url={history.location.pathname} clickmenu={()=>SwipeEffect.dropMenu(sidemenu)}/>
 
           <Menu />
 

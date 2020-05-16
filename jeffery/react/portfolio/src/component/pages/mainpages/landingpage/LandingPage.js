@@ -1,7 +1,8 @@
 import React from 'react';
 import LandingPageCss from './LandingPage.module.css';
-import {One as HeaderFont,Para as BodyFont} from '../../../reusable/fonts';
+import {One as HeaderFont,Para as BodyFont,Alpha} from '../../../reusable/fonts';
 import profile_image from '../../../assets/image/introduction/avatar@2x.png';
+import pageurl from '../../../framework/pageurl'
 
 const LandingPage = () => {
 
@@ -67,17 +68,21 @@ const LandingPage = () => {
 
                         <div className={LandingPageCss.container}>
 
-                            <button className={LandingPageCss.buttonbold}>
+                            <Alpha ahref={pageurl.CONTACT_ME_URL}>
+                                <button className={LandingPageCss.buttonbold}>
 
-                                <BodyFont fontClass={LandingPageCss.buttonfont}>Get In Touch</BodyFont>
+                                    <BodyFont fontClass={LandingPageCss.buttonfont}>Get In Touch</BodyFont>
 
-                            </button>
+                                </button>
+                            </Alpha>
 
-                            <button className={LandingPageCss.buttonstripe}>
-                            
-                                <BodyFont fontClass={LandingPageCss.buttonfont}>See my work</BodyFont>
-                            
-                            </button>
+                            <Alpha ahref={pageurl.WORK_PAGE_URL}>
+                                <button className={LandingPageCss.buttonstripe}>
+                                
+                                    <BodyFont fontClass={LandingPageCss.buttonfont}>See my work</BodyFont>
+                                
+                                </button>
+                            </Alpha>
 
                         </div>
 
@@ -88,22 +93,7 @@ const LandingPage = () => {
 
             </section>
             
-            {/* social media icons */}
-            {/* <section className={LandingPageCss.social}>
-                
-                <div className={LandingPageCss.container}>
-                    <div className={LandingPageCss.img_container}><img src={social_image2} alt="" className={LandingPageCss.social_icons}></img></div>
-                    <div className={LandingPageCss.img_container}><img src={social_image1} alt="" className={LandingPageCss.social_icons}></img></div>
-                    <div className={LandingPageCss.img_container}><img src={social_image3} alt="" className={LandingPageCss.social_icons}></img></div>
-                    <div className={LandingPageCss.img_container}><img src={social_image3b} alt="" className={LandingPageCss.social_icons}></img></div>
-                    <div className={LandingPageCss.img_container}><img src={social_image4} alt="" className={LandingPageCss.social_icons}></img></div>
-                    <div className={LandingPageCss.text_copy}>
-                        <BodyFont fontClass={LandingPageCss.credit}>Jeffery Abdulateef &copy; 2020</BodyFont>                        
-                    </div>
-                </div>
-
-            </section> */}
-
+        
         </div>
 
     )

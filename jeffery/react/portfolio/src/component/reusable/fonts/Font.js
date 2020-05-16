@@ -30,7 +30,7 @@ const Para =({fontStyle,fontClass,referral,...props})=>{
 }
 
 const Alpha =({fontStyle,ahref,fontClass,referral,...props})=>{
-    return(<a href={`http://localhost:3000${ahref}`} className={`${FontCss.font_alpha} ${fontClass}`} style={fontStyle} ref={referral} >{props.children}</a>)
+    return(<a href={ahref} className={`${FontCss.font_alpha} ${fontClass}`} style={fontStyle} ref={referral} >{props.children}</a>)
 }
 
 export {

@@ -4,7 +4,7 @@ import {Alpha,Six as Fur} from '../../../reusable/fonts';
 import pageurl from '../../../framework/pageurl'
 
 
-const Header = ({url}) => {
+const Header = ({url,clickmenu}) => {
 
     const [pageurls,setPageUrl] = React.useState({
         home : false,
@@ -43,7 +43,7 @@ const Header = ({url}) => {
 
                 <div className={HeaderCss.menu_ham}>
 
-                    <div className={HeaderCss.ham}>
+                    <div className={HeaderCss.ham} onClick={clickmenu}>
                         <div className={HeaderCss.ham_item} />
                         <div className={HeaderCss.ham_item} />
                         <div className={HeaderCss.ham_item} />

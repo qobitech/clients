@@ -35,9 +35,12 @@ const Footer = () => {
         
                             <BodyFont fontClass={FooterCss.credit}>Jeffery Abdulateef &copy; 2020 </BodyFont>                        
                             
-                            <a target="_blank" href="https://www.linkedin.com/in/frank-edekobi-500062129" rel="noopener noreferrer">
+                            <a target="_blank" href="https://www.linkedin.com/in/frank-edekobi-500062129" rel="noopener noreferrer"
+                            style={{textDecoration:"none"}}>
 
-                                <BodyFont fontClass={FooterCss.credit}>Coded by Frank</BodyFont>
+                                <BodyFont fontClass={FooterCss.credit} fontStyle={{fontSize:".75em",marginTop:"10px",color:"#b39bff"}}>
+                                    Coded by Frank
+                                </BodyFont>
 
                             </a>                        
         
@@ -47,7 +50,7 @@ const Footer = () => {
 
             </section>
 
-            <section className={FooterCss.dev}>
+            {/* <section className={FooterCss.dev}>
                 
                 <div className={FooterCss.text_copy}>
                 
@@ -59,7 +62,7 @@ const Footer = () => {
 
                 </div>
 
-            </section>
+            </section> */}
         
         </footer>
     )
