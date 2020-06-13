@@ -1,0 +1,397 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+ 
+.contain {
+  margin-left: 1rem;
+  margin-right: 1rem;
+} 
+
+navbar{
+padding: 0.5rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: red;
+}
+
+.logo{
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  padding: 0.05rem;
+}
+
+
+.welcome{
+  text-align: center;
+}
+
+img{
+  width: 100%;
+  height:auto;
+}
+
+
+.container{
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+  
+}
+.inner1{
+  display: flex;
+  border: 1px solid white;
+  margin-bottom: .5rem;
+  
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 204, 255, 0.966);
+  }
+  
+  .inner2{
+  display: flex;
+  margin-bottom: .5rem;
+  border: 1px solid white;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 204, 255, 0.966);
+  }
+  
+  .inner3{
+  display: flex;
+  border: 1px solid white;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 204, 255, 0.966);
+  }
+
+
+  .checkin{
+    margin-left: 40px;
+    
+    height: auto;
+  }
+
+  .checkout{
+    margin-left: 40px;
+    
+    
+  }
+
+  .number{
+    margin-left: 30px;
+    max-width: 100px;
+  
+  }
+
+  .adult{
+    margin-left: 50px;
+    max-width: 100px;
+  
+  }
+
+  .children{
+    margin-left: 30px;
+    max-width: 100px;
+  
+  }
+
+  .class{
+    margin-left: 120px;
+    max-width: 100px;
+  
+  }
+
+          
+  .first{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 1.5rem;
+  }
+
+
+  .second{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+  }
+
+
+  .basic{
+    text-align: center;
+    margin-bottom:40px;
+    margin-top: 40px;
+    font-size: 1.5rem;
+  }
+
+
+
+
+
+
+@media(min-width:500px) {
+
+    
+    .contain{
+
+    }
+    .container{
+      max-width: 75%;
+      display: flex;
+      justify-content: space-evenly;
+      border: 1px solid lightblue;
+      margin-top: 8em;
+      margin-bottom: 4em;
+      background-color: rgba(0, 204, 255, 0.966);
+      margin-left: 7.5rem;
+      border-radius: 0px 29px 29px 0px
+      }
+
+
+
+
+    .inner1{
+      display: flex;
+      border: 1px solid white;
+      margin: 13px;
+    
+      text-align: center;
+      }
+      
+      .inner2{
+      display: flex;
+      border: 1px solid white;
+      margin: 13px;
+    
+      text-align: center
+      }
+      
+      .inner3{
+      display: flex;
+      border: 1px solid white;
+      margin: 13px;
+    
+      text-align: center;
+      border-radius: 0px 25px 25px 0px;
+      }
+
+
+    .checkin{
+      margin-left: 40px;
+      
+      height: auto;
+    }
+
+    .checkout{
+      margin-left: 40px;
+      
+      height: auto;
+    }
+
+    .number{
+      margin-left: 30px;
+      max-width: 100px;
+      height: auto;
+    }
+
+    .adult{
+      margin-left: 50px;
+      max-width: 100px;
+      height: auto;
+    }
+
+    .children{
+      margin-left: 30px;
+      max-width: 100px;
+      height: auto;
+    }
+
+    .class{
+      margin-left: 120px;
+      max-width: 100px;
+      height: auto;
+    }
+
+
+
+    .navbar{
+      display:flex;
+      justify-content: space-between;
+
+    }
+
+
+    .home{
+      margin-top:2rem;
+      margin-left: 18rem;
+    }
+
+
+    .room{
+      margin-top:2rem;
+
+    }
+
+
+      .facility{
+        margin-top:2rem;
+        
+      }
+
+
+      .contact{
+        margin-top:2rem;
+
+      }
+
+      .login{
+        margin-top:2rem;
+        margin-right:1em;
+        
+      }
+
+      .login a{
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-color: rgba(0, 204, 255, 0.966);
+        color: white;
+        border-radius: 25px;
+      }
+
+
+      a:hover{
+        color: black !important;
+      }
+
+
+      /* section a */
+
+
+      .welcome{
+        text-align: center;
+        margin-top: 7em;
+      }
+
+  
+          
+            
+      .first{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        font-size: 1.5rem;
+      }
+
+
+      .second{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 1.5rem;
+      }
+
+
+      .basic{
+        text-align: center;
+        margin-bottom:40px;
+        margin-top: 40px;
+        font-size: 1.5rem;
+      }
+
+
+
+      .pics1{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        position:relative;
+        text-align:center;
+        color:black;
+      }
+
+
+      .pics2{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 60px;
+        width: 100%;
+        height: auto;
+        position:relative;
+        text-align:center;
+        color:black;
+      }
+
+
+      .pics3{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        position:relative;
+        text-align:center;
+        color:black;
+
+      }
+
+
+      .pics4{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 60px;
+        width: 100%;
+        height: auto;
+        position:relative;
+        text-align:center;
+        color:black;
+      }
+
+      .bottom{
+        position:relative;
+        text-align:center;
+        color:black;
+      }
+
+      .card-top{
+        position:absolute;
+        top:1px;
+        right:15px;
+        background-color: orange;
+        padding:13px;
+        
+      }
+
+      .card-bottom{
+        position:absolute;
+        top:1px;
+        right:1px;
+        background-color: orange;
+        padding:12px;
+      }
+
+
+      .pics5{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 60px;
+        width: 100%;
+        height: auto;
+        position:relative;
+        text-align:center;
+        color:black;
+      }
+
+
+
+}
