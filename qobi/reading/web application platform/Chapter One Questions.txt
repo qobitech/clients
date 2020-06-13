@@ -1,0 +1,46 @@
+1. Why are an application's mechanism for handling user access only as strong as the weakest of
+   these components ?
+
+   Answer:
+   The various defense mechanisms put in place to contain a hackers attack must cover all possible 
+   avenues available to the attacker because a loop hole in the defense structure is as strong 
+   as the hole operation.   
+
+
+2. What is the difference between a session and a session token?
+   Session
+   user state is stored on the server's memory.
+   When using a session based auth system, the server creates and stores the session data
+   in the server memory when the user logs in and then stores the session ID in a cookie
+   on the user browser.
+   The session ID is then sent on subsequent requests to the server and the server compares 
+   it with the stored session data and proceeds to process the request action.
+   
+   Session Token
+   is one in which the user state is stored on the client.
+   in token based authentication, the user data is encrypted into a JWT (JSON Web Token) with a
+   secret and then sent back to the client.
+
+   The JWT is then stored on the client side mostly local storage and sent as a header for every
+   subsequent request.
+
+
+
+3. Why is it not always possible to use a white-list based approach to input validation?
+
+   
+
+4. You are attacking an application that implements an administrative function. You do not have any
+   valid credentials to use the function. 
+   Why should you nevertheless pay very close attention to it?
+
+5. An input validation mechanism designed to block cross-site scripting attacks performs the following 
+   sequence of steps on an item of input:
+
+   1. Strip any <script> expressions that appear.
+   2. Truncate the input to 50 characters.
+   3. Remove any quotation marks within the input.
+   4. URL-decode the input.
+   5. If any item were deleted, return to step 1.
+   Can you bypass this validation mechanism to smuggle the following data past it ?
+   "><script>alert("foo")</script>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/room.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet"> 
+    <title>Rooms</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/images/companylogo/logo.png" alt="">
+        <nav class="navbar">
+              <ul class = "navbar-links">
+                  <a href="index.html" class = "navbar-link"><li>Home</li></a>
+                  <a href="rooms.html" class = "navbar-link"><li>Rooms</li></a>
+                  <a href="#" class = "navbar-link"><li>Facilities</li></a>
+                  <a href="contact.html" class = "navbar-link"><li>Contact Us</li></a>
+                  <a href="#"class = login-btn>Login</a>
+              </ul>
+        </nav>
+    </header>
+
+    <!-- section a begins -->
+    <section class="section-a">
+        <h1>Presidential Residence</h1>
+        <img src="./assets/images/rooms/BE-Hotel-06-2 1.png" alt="" class = "section-a-img">
+
+        <div class="room-selection">
+
+                <div class="check-ins">
+
+                    <label for="start">Check In:</label>
+                    <input type="date" id="start" name="check-in" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                    
+                    <label for="start">Check Out:</label>
+                    <input type="date" id="start" name="check-in" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                </div>
+
+                <div class="rooms">
+
+                    <label for="quantity">Rooms:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="5"> 
+
+                    <label for="quantity">Adults</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="5"> 
+
+                    <label for="quantity">Children</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="5">
+            </div>
+
+                <div class="class-type">
+                    
+                    <label for="class-select">Choose a Class</label>
+                    <select id="class-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="first-class">First Class</option>
+                        <option value="second-class">Second Class</option>
+                        <option value="third-class">Basic</option>
+                    </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- section A ends -->
+
+    <!-- section B begins -->
+    <section class="section-b" id="first-class">
+        <h2>First Class</h2>
+
+        <div class="images-container">
+            <img src="./assets/images/rooms/817179_1512654457 1.png" alt="" class="images">
+            <img src="./assets/images/rooms/Kelebek-Cave-HotelTurkey 1.png" alt="" class="images">
+            <img src="./assets/images/rooms/1024x768_QAMH3_34462077-h1-luton-mansionstatesuite 1.png" alt="" class="images">
+            <img src="./assets/images/rooms/BOG-le-w-hotel-nouvelle-tendance-du-luxe-moderne-2_1-1024x512 1.png" alt="" class="images">
+        </div>
+    </section>
+    <!-- section B ends -->
+
+    <!-- section C starts -->
+    <section class="section-c" id ="second-class">
+        <h2>Second Class</h2>
+
+        <div class="images-container">
+            <img src="./assets/images/rooms/OIP (1) 1.png" alt="" class="images">
+            <img src="./assets/images/rooms/1024x768_Q4ZRW_image4391545 1.png" alt="" class="images">
+            <img src="./assets/images/rooms/OIP 1.png" alt="" class="images">
+            <img src="./assets/images/rooms/OIP (2) 1.png" alt="" class="images">
+        </div>
+    </section>
+    <!-- Section C ends -->
+
+    <!-- Section D begins -->
+    <section class="section-d" id="basic">
+        <h2>Basic</h2>
+        <div class="images-container">
+            <img src="./assets/images/rooms/109443811 1.png" alt="" class="images">
+            <img src="./assets/images/rooms/OIF 1.png" alt="" class="images">
+        </div>
+    </section>
+<!-- section D ends -->
+<footer>
+    <div class="footer-text">
+    <p><b>2020. All Rights Reserved</b></p>
+</div>
+</footer>
+</body>
+</html>
